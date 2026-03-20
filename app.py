@@ -99,7 +99,26 @@ section[data-testid="stSidebar"] input {
     color: black !important;
     background-color: white !important;
 }
-                        
+/* ✅ White background for Metric Toggles (Checkbox container) */
+section[data-testid="stSidebar"] div[data-testid="stCheckbox"] {
+    background-color: white !important;
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+/* ✅ White background for Time Granularity (Selectbox container) */
+section[data-testid="stSidebar"] div[data-baseweb="select"] {
+    background-color: white !important;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* Optional: slight spacing for neat UI */
+section[data-testid="stSidebar"] .stSelectbox {
+    margin-top: 10px;
+}
+                                 
 /* ---------------- KPI Cards ---------------- */
 [data-testid="metric-container"] {
     background: white;
