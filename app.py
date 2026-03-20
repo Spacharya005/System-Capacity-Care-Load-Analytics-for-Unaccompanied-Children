@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 from preprocessing import load_and_structure_data, validate_data
 from metrics import compute_metrics
@@ -147,8 +148,15 @@ col_logo, col_title = st.columns([1, 5], gap="small")
 
 with col_logo:
     # Replace with your actual logo file names
-    st.image("assets/unified_mentor_logo_2.png", use_container_width=True)
-    st.image("assets/hhs_logo.png", use_container_width=True)
+
+    logo1_path = os.path.join("assets", "unified_mentor_logo_2.png")
+    logo2_path = os.path.join("assets", "hhs_logo.png")
+
+    if os.path.exists(logo1_path):
+        st.image(logo1_path, use_container_width=True)
+
+    if os.path.exists(logo2_path):
+        st.image(logo2_path, use_container_width=True)
 
 with col_title:
     st.title("System Capacity & Care Load Analytics for Unaccompanied Children")
