@@ -59,7 +59,47 @@ section[data-testid="stSidebar"] .stCheckbox p {
     color: #EAF4FF !important;
     font-weight: 600 !important;
 }
-            
+
+/* Sidebar background */
+section[data-testid="stSidebar"] {
+    background-color: #0A3D62;
+}
+
+/* Labels (keep white) */
+section[data-testid="stSidebar"] label {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Section headings */
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: white !important;
+}
+
+/* Checkbox text */
+section[data-testid="stSidebar"] .stCheckbox label,
+section[data-testid="stSidebar"] .stCheckbox p {
+    color: #EAF4FF !important;
+}
+
+/* ✅ FIX: Date input text */
+section[data-testid="stSidebar"] input {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* ✅ FIX: Selectbox (Time Aggregation) */
+section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* Dropdown selected value */
+section[data-testid="stSidebar"] .stSelectbox span {
+    color: black !important;
+}
+                        
 /* ---------------- KPI Cards ---------------- */
 [data-testid="metric-container"] {
     background: white;
