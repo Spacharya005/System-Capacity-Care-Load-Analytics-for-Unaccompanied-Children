@@ -74,7 +74,7 @@ section[data-testid="stSidebar"] .stSelectbox label {
 
 /* Date input label */
 section[data-testid="stSidebar"] .stDateInput label {
-    color: white;
+    color: black !important;
 }
 
 /* Headings */
