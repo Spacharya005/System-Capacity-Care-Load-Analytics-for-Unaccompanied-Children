@@ -144,7 +144,7 @@ st.markdown("""
 # -----------------------------------------------------
 # Header Section
 # -----------------------------------------------------
-col_logo, col_title = st.columns([1, 5], gap="small")
+col_logo, col_title = st.columns([1, 4], gap="small")
 
 with col_logo:
     # Replace with your actual logo file names
