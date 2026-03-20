@@ -46,68 +46,58 @@ h2, h3 {
 /* ---------------- Sidebar Styling ---------------- */
 section[data-testid="stSidebar"] {
     background-color: #0A3D62;
+    color: white;
 }
 
-/* Force ALL sidebar text visible */
-section[data-testid="stSidebar"] * {
-    color: white !important;
-}
-
-/* Checkbox text fix */
-section[data-testid="stSidebar"] .stCheckbox label,
-section[data-testid="stSidebar"] .stCheckbox p {
-    color: #EAF4FF !important;
-    font-weight: 600 !important;
-}
-
-/* Sidebar background */
-section[data-testid="stSidebar"] {
-    background-color: #0A3D62;
-}
-
-/* Labels (keep white) */
+/* Labels */
 section[data-testid="stSidebar"] label {
-    color: white !important;
+    color: #FFFFFF !important;
+}
+
+/* REMOVE the global span rule ❌ */
+/* section[data-testid="stSidebar"] span { color: #FFFFFF !important; } */
+
+/* Checkbox label */
+section[data-testid="stSidebar"] div[data-testid="stCheckbox"] label {
+    color: #EAF4FF !important;
     font-weight: 600;
 }
 
-/* Section headings */
-section[data-testid="stSidebar"] h2,
-section[data-testid="stSidebar"] h3 {
-    color: white !important;
+/* Selectbox label */
+section[data-testid="stSidebar"] .stSelectbox label {
+    color: #FFFFFF !important;
 }
 
-/* Checkbox text */
-section[data-testid="stSidebar"] .stCheckbox label,
-section[data-testid="stSidebar"] .stCheckbox p {
-    color: #EAF4FF !important;
+/* Date input label */
+section[data-testid="stSidebar"] .stDateInput label {
+    color: white;
 }
 
-/*  Date input text */
-section[data-testid="stSidebar"] input {
-    color: black !important;
-    background-color: white !important;
+/* Headings */
+section[data-testid="stSidebar"] h2 {
+    color: white;
 }
 
-/* Fix Selectbox (Time Aggregation) text color */
+/* ✅ FIX: Selectbox value (Time Aggregation) */
 section[data-testid="stSidebar"] div[data-baseweb="select"] span {
     color: black !important;
 }
 
-/* Fix dropdown input box */
+/* ✅ FIX: Selectbox background */
 section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
     background-color: white !important;
     color: black !important;
 }
 
-/* Fix dropdown menu items */
+/* ✅ FIX: Dropdown options */
 div[role="listbox"] div {
     color: black !important;
 }
 
-/* Dropdown selected value */
-section[data-testid="stSidebar"] .stSelectbox span {
+/* ✅ FIX: Date input text */
+section[data-testid="stSidebar"] input {
     color: black !important;
+    background-color: white !important;
 }
                         
 /* ---------------- KPI Cards ---------------- */
