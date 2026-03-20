@@ -65,7 +65,7 @@ section[data-testid="stSidebar"] div[data-testid="stCheckbox"] label {
 
 /* Selectbox label */
 section[data-testid="stSidebar"] .stSelectbox label {
-    color: #FFFFFF !important;
+    color: #white !important;
 }
 
 /* Date input label */
