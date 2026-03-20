@@ -53,7 +53,11 @@ section[data-testid="stSidebar"] {
 section[data-testid="stSidebar"] label {
     color: #FFFFFF !important;
 }
-
+/* Force ALL sidebar text visible */ 
+section[data-testid="stSidebar"] * { 
+    color: white !important; 
+}
+            
 /* REMOVE the global span rule ❌ */
 /* section[data-testid="stSidebar"] span { color: #FFFFFF !important; } */
 
@@ -65,7 +69,7 @@ section[data-testid="stSidebar"] div[data-testid="stCheckbox"] label {
 
 /* Selectbox label */
 section[data-testid="stSidebar"] .stSelectbox label {
-    color: #white !important;
+    color: #FFFFFF !important;
 }
 
 /* Date input label */
