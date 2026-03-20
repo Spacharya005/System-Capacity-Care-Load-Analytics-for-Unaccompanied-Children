@@ -153,10 +153,10 @@ with col_logo:
     logo2_path = os.path.join("assets", "hhs_logo.png")
 
     if os.path.exists(logo1_path):
-        st.image(logo1_path, use_container_width=True)
+        st.image(logo1_path, width=200)
 
     if os.path.exists(logo2_path):
-        st.image(logo2_path, use_container_width=True)
+        st.image(logo2_path, width=160)
 
 with col_title:
     st.title("System Capacity & Care Load Analytics for Unaccompanied Children")
