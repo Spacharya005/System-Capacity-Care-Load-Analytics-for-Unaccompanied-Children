@@ -83,16 +83,26 @@ section[data-testid="stSidebar"] .stCheckbox p {
     color: #EAF4FF !important;
 }
 
-/* ✅ FIX: Date input text */
+/*  Date input text */
 section[data-testid="stSidebar"] input {
     color: black !important;
     background-color: white !important;
 }
 
-/* ✅ FIX: Selectbox (Time Aggregation) */
-section[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] {
+/* Fix Selectbox (Time Aggregation) text color */
+section[data-testid="stSidebar"] div[data-baseweb="select"] span {
     color: black !important;
+}
+
+/* Fix dropdown input box */
+section[data-testid="stSidebar"] div[data-baseweb="select"] > div {
     background-color: white !important;
+    color: black !important;
+}
+
+/* Fix dropdown menu items */
+div[role="listbox"] div {
+    color: black !important;
 }
 
 /* Dropdown selected value */
