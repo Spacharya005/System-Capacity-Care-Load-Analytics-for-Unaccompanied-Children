@@ -80,7 +80,7 @@ section[data-testid="stSidebar"] h2 {
 
 /* ✅ FIX: Selectbox value (Time Aggregation) */
 section[data-testid="stSidebar"] div[data-baseweb="select"] span {
-    color: black !important;
+    color: white !important;
 }
 
 /* ✅ FIX: Selectbox background */
