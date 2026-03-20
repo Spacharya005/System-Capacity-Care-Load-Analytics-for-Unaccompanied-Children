@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 def load_and_structure_data(filepath):
-    df = load_and_structure_data("data/HHS_Unaccompanied_Alien_Children_Program.csv")
+    df = pd.read_csv("data/HHS_Unaccompanied_Alien_Children_Program.csv")
     # Convert date column
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.drop_duplicates(subset='Date')
