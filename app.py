@@ -45,36 +45,20 @@ h2, h3 {
 /* ---------------- Sidebar Styling ---------------- */
 section[data-testid="stSidebar"] {
     background-color: #0A3D62;
-    color: white;
 }
 
-/* Sidebar text visibility fix */
-section[data-testid="stSidebar"] label {
-    color: #FFFFFF !important;
+/* Force ALL sidebar text visible */
+section[data-testid="stSidebar"] * {
+    color: white !important;
 }
 
-section[data-testid="stSidebar"] span {
-    color: #FFFFFF !important;
-}
-
-/* Checkbox label color fix */
-section[data-testid="stSidebar"] div[data-testid="stCheckbox"] label {
+/* Checkbox text fix */
+section[data-testid="stSidebar"] .stCheckbox label,
+section[data-testid="stSidebar"] .stCheckbox p {
     color: #EAF4FF !important;
-    font-weight: 600;
-}
-
-section[data-testid="stSidebar"] .stSelectbox label {
-    color: #FFFFFF !important;
+    font-weight: 600 !important;
 }
             
-section[data-testid="stSidebar"] .stDateInput label {
-    color: white;
-}
-
-section[data-testid="stSidebar"] h2 {
-    color: white;
-}
-
 /* ---------------- KPI Cards ---------------- */
 [data-testid="metric-container"] {
     background: white;
@@ -83,7 +67,11 @@ section[data-testid="stSidebar"] h2 {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     border-left: 6px solid #0A3D62;
 }
-
+/* Center metric labels */
+[data-testid="stMetricLabel"] {
+    justify-content: center;
+}
+            
 /* ---------------- Tabs ---------------- */
 button[role="tab"] {
     font-weight: 600;
@@ -102,6 +90,26 @@ button[role="tab"][aria-selected="true"] {
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.06);
 }
+
+/* ---------------- Mobile Responsive ---------------- */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 22px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+    }
+
+    .block-container {
+        padding: 1rem !important;
+    }
+
+    [data-testid="metric-container"] {
+        padding: 12px !important;
+    }
+}            
 
 /* ---------------- Footer ---------------- */
 footer {
@@ -135,12 +143,12 @@ st.markdown("""
 # -----------------------------------------------------
 # Header Section
 # -----------------------------------------------------
-col_logo, col_title = st.columns([1, 6])
+col_logo, col_title = st.columns([1, 5], gap="small")
 
 with col_logo:
     # Replace with your actual logo file names
-    st.image("assets/unified_mentor_logo_2.png", width=200)
-    st.image("assets/hhs_logo.png", width=160)
+    st.image("assets/unified_mentor_logo_2.png", use_container_width=True)
+    st.image("assets/hhs_logo.png", use_container_width=True)
 
 with col_title:
     st.title("System Capacity & Care Load Analytics for Unaccompanied Children")
@@ -209,7 +217,8 @@ with tab1:
 
     st.markdown("## 📌 Key System Metrics Overview")
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2 = st.columns(2)
+    col3, col4 = st.columns(2)
 
     col1.metric(
         "Total Children Under Care",
