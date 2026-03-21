@@ -98,8 +98,8 @@ section[data-testid="stSidebar"] input {
     background-color: white !important;
 }
 
-/* ✅ FIX: Metric Toggles & Time Granularity headings */
-section[data-testid="stSidebar"] [data-testid="stMarkdown"] p {
+/* ✅ FIX: Metric Toggles & Time Granularity headings ONLY */
+section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] p {
     color: #FFFFFF !important;
     font-weight: 600;
 }
@@ -303,7 +303,7 @@ with tab1:
             y='Total_System_Load',
             color_discrete_sequence=["#0A3D62"]
         )
-        st.plotly_chart(fig, use_container_width=True, height=500)
+        st.plotly_chart(fig, use_container_width=True, height=500, width=300)
 
     # CBP vs HHS
     if show_cbp_hhs:
@@ -314,7 +314,7 @@ with tab1:
             y=['CBP_Custody', 'HHS_Care'],
             color_discrete_sequence=["#1B9CFC", "#F39C12"]
         )
-        st.plotly_chart(fig2, use_container_width=True, height=500)
+        st.plotly_chart(fig2, use_container_width=True, height=500, width=300)
 
     # Net Intake & Backlog
     if show_intake_backlog:
@@ -325,7 +325,7 @@ with tab1:
             y=['Net_Intake', 'Cumulative_Backlog'],
             color_discrete_sequence=["#E74C3C", "#2ECC71"]
         )
-        st.plotly_chart(fig3, use_container_width=True, height=500)
+        st.plotly_chart(fig3, use_container_width=True, height=500, width=300)
 
 
 # =====================================================
