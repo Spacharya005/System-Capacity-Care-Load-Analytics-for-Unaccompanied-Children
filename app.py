@@ -303,7 +303,11 @@ with tab1:
             y='Total_System_Load',
             color_discrete_sequence=["#0A3D62"]
         )
-        st.plotly_chart(fig, use_container_width=True, height=500, width=300)
+        fig.update_layout(
+            height=500,   # 🔥 controls vertical size
+            margin=dict(l=20, r=20, t=40, b=20)
+        )
+        st.plotly_chart(fig, use_container_width=True)
 
     # CBP vs HHS
     if show_cbp_hhs:
@@ -314,7 +318,11 @@ with tab1:
             y=['CBP_Custody', 'HHS_Care'],
             color_discrete_sequence=["#1B9CFC", "#F39C12"]
         )
-        st.plotly_chart(fig2, use_container_width=True, height=500, width=300)
+        fig2.update_layout(
+            height=500,   # 🔥 controls vertical size
+            margin=dict(l=20, r=20, t=40, b=20)
+        )
+        st.plotly_chart(fig2, use_container_width=True)
 
     # Net Intake & Backlog
     if show_intake_backlog:
@@ -325,7 +333,11 @@ with tab1:
             y=['Net_Intake', 'Cumulative_Backlog'],
             color_discrete_sequence=["#E74C3C", "#2ECC71"]
         )
-        st.plotly_chart(fig3, use_container_width=True, height=500, width=300)
+        fig3.update_layout(
+            height=500,   # 🔥 controls vertical size
+            margin=dict(l=20, r=20, t=40, b=20)
+        )   
+        st.plotly_chart(fig3, use_container_width=True)
 
 
 # =====================================================
