@@ -98,10 +98,10 @@ section[data-testid="stSidebar"] input {
     background-color: white !important;
 }
 
-/* ✅ FIX: Metric Toggles & Time Granularity headings ONLY */
-section[data-testid="stSidebar"] div[data-testid="stMarkdownContainer"] p {
+/* ✅ FIX: Metric Toggles & Time Granularity headings */
+section[data-testid="stSidebar"] h3 {
     color: #FFFFFF !important;
-    font-weight: 600;
+    font-weight: 700;
 }
                                  
 /* ---------------- KPI Cards ---------------- */
