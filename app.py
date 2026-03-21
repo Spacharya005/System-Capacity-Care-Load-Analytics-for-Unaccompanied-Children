@@ -54,8 +54,6 @@ section[data-testid="stSidebar"] label {
     color: #FFFFFF !important;
 }
 
-/* REMOVE the global span rule ❌ */
-/* section[data-testid="stSidebar"] span { color: #FFFFFF !important; } */
 
 /* Checkbox label */
 section[data-testid="stSidebar"] div[data-testid="stCheckbox"] label {
@@ -99,13 +97,11 @@ section[data-testid="stSidebar"] input {
     color: black !important;
     background-color: white !important;
 }
-/* ✅ Fix ONLY Metric Toggles text */
-section[data-testid="stSidebar"] div:has(> span:contains("Metric Toggles")) span {
-    color: white !important;
-}
-            /* ✅ Fix ONLY Metric Toggles text */
-section[data-testid="stSidebar"] div:has(> span:contains("⏱ Time Granularity")) span {
-    color: white !important;
+
+/* ✅ ADD THIS AT THE VERY END */
+section[data-testid="stSidebar"] [data-testid="stMarkdown"] p {
+    color: #FFFFFF !important;
+    font-weight: 600;
 }
                                  
 /* ---------------- KPI Cards ---------------- */
