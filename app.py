@@ -53,11 +53,7 @@ section[data-testid="stSidebar"] {
 section[data-testid="stSidebar"] label {
     color: #FFFFFF !important;
 }
-/* Force ALL sidebar text visible */ 
-section[data-testid="stSidebar"] * { 
-    color: white !important; 
-}
-            
+
 /* REMOVE the global span rule ❌ */
 /* section[data-testid="stSidebar"] span { color: #FFFFFF !important; } */
 
@@ -74,7 +70,7 @@ section[data-testid="stSidebar"] .stSelectbox label {
 
 /* Date input label */
 section[data-testid="stSidebar"] .stDateInput label {
-    color: black !important;
+    color: white;
 }
 
 /* Headings */
@@ -84,7 +80,7 @@ section[data-testid="stSidebar"] h2 {
 
 /* ✅ FIX: Selectbox value (Time Aggregation) */
 section[data-testid="stSidebar"] div[data-baseweb="select"] span {
-    color: white !important;
+    color: black !important;
 }
 
 /* ✅ FIX: Selectbox background */
@@ -304,7 +300,7 @@ with tab1:
             y='Total_System_Load',
             color_discrete_sequence=["#0A3D62"]
         )
-        st.plotly_chart(fig, use_container_width=True)
+        st.plotly_chart(fig, use_container_width=True, height=500)
 
     # CBP vs HHS
     if show_cbp_hhs:
@@ -315,7 +311,7 @@ with tab1:
             y=['CBP_Custody', 'HHS_Care'],
             color_discrete_sequence=["#1B9CFC", "#F39C12"]
         )
-        st.plotly_chart(fig2, use_container_width=True)
+        st.plotly_chart(fig2, use_container_width=True, height=500)
 
     # Net Intake & Backlog
     if show_intake_backlog:
@@ -326,7 +322,7 @@ with tab1:
             y=['Net_Intake', 'Cumulative_Backlog'],
             color_discrete_sequence=["#E74C3C", "#2ECC71"]
         )
-        st.plotly_chart(fig3, use_container_width=True)
+        st.plotly_chart(fig3, use_container_width=True, height=500)
 
 
 # =====================================================
