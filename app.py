@@ -98,7 +98,7 @@ section[data-testid="stSidebar"] input {
     background-color: white !important;
 }
 
-/* ✅ ADD THIS AT THE VERY END */
+/* ✅ FIX: Metric Toggles & Time Granularity headings */
 section[data-testid="stSidebar"] [data-testid="stMarkdown"] p {
     color: #FFFFFF !important;
     font-weight: 600;
