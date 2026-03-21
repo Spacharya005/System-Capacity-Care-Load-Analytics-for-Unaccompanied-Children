@@ -175,6 +175,11 @@ This project was developed as part of the **Unified Mentor Internship Program** 
 
 ---
 
+## 🌐streamlit web application link
+
+https://spacharya005appio-4bhpappgd6cy4bgvpgn36uk.streamlit.app/
+---
+
 ## 📬 Contact
 
 **Shramanth P. Acharya**
