@@ -99,7 +99,14 @@ section[data-testid="stSidebar"] input {
     color: black !important;
     background-color: white !important;
 }
-
+/* ✅ Fix ONLY Metric Toggles text */
+section[data-testid="stSidebar"] div:has(> span:contains("Metric Toggles")) span {
+    color: #FFFFFF !important;
+}
+            /* ✅ Fix ONLY Metric Toggles text */
+section[data-testid="stSidebar"] div:has(> span:contains("⏱ Time Granularity")) span {
+    color: #FFFFFF !important;
+}
                                  
 /* ---------------- KPI Cards ---------------- */
 [data-testid="metric-container"] {
