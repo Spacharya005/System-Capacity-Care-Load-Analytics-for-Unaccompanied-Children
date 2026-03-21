@@ -101,11 +101,11 @@ section[data-testid="stSidebar"] input {
 }
 /* ✅ Fix ONLY Metric Toggles text */
 section[data-testid="stSidebar"] div:has(> span:contains("Metric Toggles")) span {
-    color: #FFFFFF !important;
+    color: white !important;
 }
             /* ✅ Fix ONLY Metric Toggles text */
 section[data-testid="stSidebar"] div:has(> span:contains("⏱ Time Granularity")) span {
-    color: #FFFFFF !important;
+    color: white !important;
 }
                                  
 /* ---------------- KPI Cards ---------------- */
